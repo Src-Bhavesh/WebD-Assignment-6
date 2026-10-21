@@ -41,7 +41,7 @@ You need Node.js 18.11 or newer, npm, and a MongoDB connection string (local Mon
 2. Put your MongoDB connection string in `MONGO_URI`. Change `JWT_SECRET` and the admin password too.
 3. Run `npm run seed` once to add the first admin, a demo customer, four departments, and ten sample tickets.
 4. Start the API with `npm run dev`. It runs at `http://localhost:5050` by default. The health page is `/api/health`.
-5. In `client`, install packages and copy `.env.example` to `.env`. Set `VITE_API_URL` to your API address ending in `/api`.
+5. In `client`, install packages and copy `.env.example` to `.env`. For local work it points to `http://localhost:5050/api`. Set `VITE_API_URL` to your deployed API address ending in `/api` when needed.
 6. Start the site with `npm run dev`. Vite prints the local address, usually `http://localhost:5173`.
 
 Example terminal commands:
@@ -107,12 +107,13 @@ Admin ticket filters are query parameters: `status`, `priority`, `category`, and
 ## Deployment notes
 
 - Deploy `server` as a Node web service and set its environment variables in the hosting dashboard.
-- Deploy `client` as a Vite site. Set `VITE_API_URL` to the deployed API URL ending in `/api`.
+- Deploy `client` as a Vite site. Set `VITE_API_URL` to the deployed API URL ending in `/api`. If it is not set, production builds use the Render API URL below.
 - `client/vercel.json` rewrites app routes to `index.html` so refreshing a ticket URL works on Vercel.
 - Add the deployed frontend origin to `CLIENT_URL` on the API service.
 - Run the seed command once against the production database if you want to use the sample records.
 
-Live site: add your deployed URL here.  
+API service (Render): https://webd-assignment-6.onrender.com  
+Frontend site: add your deployed Vercel or Netlify URL here.  
 Screenshots: add screenshots of the customer ticket list and admin dashboard here after deployment.
 
 ## Things to try

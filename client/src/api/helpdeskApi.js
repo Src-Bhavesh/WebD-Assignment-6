@@ -1,4 +1,6 @@
-const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5050/api";
+const localApiUrl = "http://localhost:5050/api";
+const liveApiUrl = "https://webd-assignment-6.onrender.com/api";
+const apiUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? liveApiUrl : localApiUrl);
 
 export async function apiCall(path, options = {}, token = "") {
   const response = await fetch(`${apiUrl}${path}`, {
