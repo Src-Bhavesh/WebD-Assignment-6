@@ -109,11 +109,13 @@ Admin ticket filters are query parameters: `status`, `priority`, `category`, and
 - Deploy `server` as a Node web service and set its environment variables in the hosting dashboard.
 - Deploy `client` as a Vite site. Set `VITE_API_URL` to the deployed API URL ending in `/api`. If it is not set, production builds use the Render API URL below.
 - `client/vercel.json` rewrites app routes to `index.html` so refreshing a ticket URL works on Vercel.
-- Add the deployed frontend origin to `CLIENT_URL` on the API service.
+- The API allows the local frontend and `https://web-d-assignment-6.vercel.app`. Add any other deployed frontend origin to `CLIENT_URL` on the API service.
 - Run the seed command once against the production database if you want to use the sample records.
 
-API service (Render): https://webd-assignment-6.onrender.com  
-Frontend site: add your deployed Vercel or Netlify URL here.  
+API service (Render): https://webd-assignment-6.onrender.com
+
+Frontend site: https://web-d-assignment-6.vercel.app
+
 Screenshots: add screenshots of the customer ticket list and admin dashboard here after deployment.
 
 ## Things to try

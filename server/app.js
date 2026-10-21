@@ -9,7 +9,11 @@ import dashboardRoutes from "./routes/dashboardRoutes.js";
 import { errorHandler, notFound } from "./middleware/errors.js";
 
 const app = express();
-const allowedSites = (process.env.CLIENT_URL || "http://localhost:5173").split(",");
+const allowedSites = [
+  "http://localhost:5173",
+  "https://web-d-assignment-6.vercel.app",
+  ...(process.env.CLIENT_URL || "").split(",")
+].map((site) => site.trim()).filter(Boolean);
 app.use(cors({ origin: allowedSites, credentials: true }));
 app.use(express.json());
 
