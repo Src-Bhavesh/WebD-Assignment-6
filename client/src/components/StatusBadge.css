@@ -1,0 +1,12 @@
+[data-status] {
+  display: inline-block;
+  padding: 2px 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+[data-status="open"] { background: #fff5df; }
+[data-status="in-progress"] { background: #eaf0ff; }
+[data-status="resolved"] { background: #e8f5e9; }
+[data-status="closed"] { background: #eee; }

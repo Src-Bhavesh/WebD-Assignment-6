@@ -1,0 +1,20 @@
+#topbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px max(24px, calc((100% - 960px) / 2));
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+#brand { font-size: 22px; font-weight: bold; text-decoration: none; color: #252525; }
+#topbar nav { display: flex; gap: 16px; }
+#topbar nav a[aria-current="page"] { font-weight: bold; }
+#nav-account { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+#nav-account button { padding: 6px 10px; }
+
+@media (max-width: 600px) {
+  #topbar { flex-wrap: wrap; gap: 12px; padding: 12px; }
+  #topbar nav { order: 3; width: 100%; }
+  #nav-account { margin-left: auto; }
+}

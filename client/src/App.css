@@ -1,0 +1,16 @@
+#page-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+body > #root {
+  min-height: 100vh;
+}
+
+footer {
+  padding: 18px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}

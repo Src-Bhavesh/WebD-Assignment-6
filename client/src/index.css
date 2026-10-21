@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: #252525;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: #315b9b; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+input, select, textarea { padding: 8px; }
+section { margin-bottom: 28px; }

@@ -1,0 +1,21 @@
+#tickets-page > header, #admin-tickets-page > header, #dashboard-page > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+#tickets-page > section, #admin-tickets-page > section {
+  margin-top: 28px;
+  padding: 18px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+#tickets-page label, #admin-tickets-page label {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 12px 14px 0;
+  font-size: 14px;
+}

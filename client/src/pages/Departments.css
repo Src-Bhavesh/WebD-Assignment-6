@@ -1,0 +1,7 @@
+#departments-page > header { margin-bottom: 24px; }
+#departments-page > section { max-width: 680px; padding: 18px; background: white; border: 1px solid #ddd; }
+#departments-page article { padding: 10px 0; border-top: 1px solid #ddd; }
+#departments-page article button { margin-right: 8px; }
+#departments-page form { display: grid; gap: 12px; }
+#departments-page label { display: grid; gap: 5px; }
+#departments-page button { justify-self: start; padding: 7px 12px; }

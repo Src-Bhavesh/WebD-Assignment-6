@@ -1,0 +1,2 @@
+#admin-tickets-page > section { margin-top: 28px; padding: 18px; background: white; border: 1px solid #ddd; }
+#admin-tickets-page label { display: inline-flex; flex-direction: column; gap: 4px; margin: 0 12px 14px 0; font-size: 14px; }
